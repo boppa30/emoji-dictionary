@@ -52,8 +52,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="This is a Vegas Wedding Chapel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccw-RJ-irt">
-                                <rect key="frame" x="114.5" y="373" width="243.5" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wedding chapel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ysl-ib-pih">
+                                <rect key="frame" x="145.5" y="343" width="123" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -63,8 +63,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="xA6-do-hDX" firstAttribute="top" secondItem="XFM-S6-s9D" secondAttribute="top" constant="40" id="0e1-vQ-6eH"/>
-                            <constraint firstItem="ccw-RJ-irt" firstAttribute="top" secondItem="xA6-do-hDX" secondAttribute="bottom" constant="50" id="air-xa-aQs"/>
+                            <constraint firstItem="Ysl-ib-pih" firstAttribute="centerX" secondItem="iEs-Oj-TIy" secondAttribute="centerX" id="YoK-Mc-Mab"/>
                             <constraint firstItem="xA6-do-hDX" firstAttribute="centerX" secondItem="iEs-Oj-TIy" secondAttribute="centerX" id="lz9-If-9iI"/>
+                            <constraint firstItem="Ysl-ib-pih" firstAttribute="top" secondItem="xA6-do-hDX" secondAttribute="bottom" constant="20" id="mee-BM-gQr"/>
                         </constraints>
                     </view>
                 </viewController>
