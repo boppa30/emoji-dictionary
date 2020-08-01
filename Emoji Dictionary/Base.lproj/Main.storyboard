@@ -40,10 +40,10 @@
             </objects>
             <point key="canvasLocation" x="-23" y="368"/>
         </scene>
-        <!--View Controller-->
+        <!--Definition View Controller-->
         <scene sceneID="bvw-bw-ZMU">
             <objects>
-                <viewController id="HyS-hL-mFn" sceneMemberID="viewController">
+                <viewController id="HyS-hL-mFn" customClass="DefinitionViewController" customModule="Emoji_Dictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iEs-Oj-TIy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
