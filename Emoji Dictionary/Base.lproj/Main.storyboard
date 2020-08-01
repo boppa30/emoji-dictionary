@@ -72,6 +72,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Uaa-zf-fr0"/>
                     <connections>
+                        <outlet property="definitionLabel" destination="Ysl-ib-pih" id="2Tc-aq-601"/>
                         <outlet property="emojiLabel" destination="xA6-do-hDX" id="LGj-7x-7CP"/>
                     </connections>
                 </viewController>
