@@ -71,6 +71,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Uaa-zf-fr0"/>
+                    <connections>
+                        <outlet property="emojiLabel" destination="xA6-do-hDX" id="LGj-7x-7CP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8N0-em-dvU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
