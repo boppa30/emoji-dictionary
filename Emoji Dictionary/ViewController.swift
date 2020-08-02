@@ -11,7 +11,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     @IBOutlet weak var primarytableview: UITableView!
     
-    var emojis = ["🇺🇸","⚾️","🏕","🗽","🏔","🏖","🤝","☝️"]
+    var emojis : [Emoji] = []
     
     
     override func viewDidLoad() {
@@ -19,8 +19,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         // Do any additional setup after loading the view.
         primarytableview.dataSource = self
         primarytableview.delegate = self
-        
-        
+        emojis = makeEmojiArray()
+
     
     }
 
@@ -30,7 +30,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
-        cell.textLabel?.text = emojis[indexPath.row]
+        let emoji = emojis[indexPath.row]
+        cell.textLabel?.text = emoji.category
         return cell
     }
     
@@ -44,7 +45,49 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         defVC.emoji = sender as! String
     }
 
-    
+    func makeEmojiArray() -> [Emoji] {
+        let emoji1 = Emoji()
+        emoji1.stringEmoji = "🇺🇸"
+        emoji1.created = 1776
+        emoji1.category = "Welcome to America!"
+        
+        let emoji2 = Emoji()
+        emoji2.stringEmoji = "⚾️"
+        emoji2.created = 1805
+        emoji2.category = "This is our national pastime"
+        
+        let emoji3 = Emoji()
+        emoji3.stringEmoji = "🏕"
+        emoji3.created = 0
+        emoji3.category = "We like to do this"
+        
+        let emoji4 = Emoji()
+        emoji4.stringEmoji = "🗽"
+        emoji4.created = 1886
+        emoji4.category = "This thang came from France"
+        
+        let emoji5 = Emoji()
+        emoji5.stringEmoji = "🏔"
+        emoji5.created = 0
+        emoji5.category = "Our tallest Mountain: Mt. McKinley"
+        
+        let emoji6 = Emoji()
+        emoji6.stringEmoji = "🏖"
+        emoji6.created = 0
+        emoji6.category = "We have lots of these"
+        
+        let emoji7 = Emoji()
+        emoji7.stringEmoji = "🤝"
+        emoji7.created = 1968
+        emoji7.category = "Collaboratin'"
+        
+        let emoji8 = Emoji()
+        emoji8.stringEmoji = "☝️"
+        emoji8.created = 1946
+        emoji8.category = "Back 2 Back World War Champs"
+        
+        return[emoji1, emoji2, emoji3, emoji4, emoji5, emoji6, emoji7, emoji8]
+    }
     
 }
 

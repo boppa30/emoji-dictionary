@@ -11,6 +11,8 @@ class DefinitionViewController: UIViewController {
     @IBOutlet weak var emojiLabel: UILabel!
     
     @IBOutlet weak var definitionLabel: UILabel!
+    @IBOutlet weak var categoryLabel: UILabel!
+    @IBOutlet weak var createdLabel: UILabel!
     
     var emoji = "NO EMOJI"
     
@@ -22,28 +24,52 @@ class DefinitionViewController: UIViewController {
         emojiLabel.text = emoji
         
         if emoji == "🇺🇸" {
-            definitionLabel.text = "Welcome to America"}
+            definitionLabel.text = "Welcome to America"
+            categoryLabel.text = "Emoji Category: National Flag"
+            createdLabel.text = "Created: 1776"
+        }
         
         if emoji == "⚾️" {
-            definitionLabel.text = "This is our pastime"}
+            definitionLabel.text = "This is our pastime"
+            categoryLabel.text = "Emoji Category: Games"
+            createdLabel.text = "Created: Back in the day"
+        }
        
         if emoji == "🏕" {
-            definitionLabel.text = "Our best idea"}
+            definitionLabel.text = "Our best idea"
+            categoryLabel.text = "Emoji Category: Activity"
+            createdLabel.text = "Created: From the beginning of time"
+        }
         
         if emoji == "🗽" {
-            definitionLabel.text = "See this,  get PSYCHED"}
+            definitionLabel.text = "See this, get PSYCHED"
+            categoryLabel.text = "Emoji Category: Monument"
+            createdLabel.text = "Created: 1886"
+        }
         
         if emoji == "🏔" {
-            definitionLabel.text = "We have big ol' mountains"}
+            definitionLabel.text = "We have big ol' mountains"
+            categoryLabel.text = "Emoji Category: Nature"
+            createdLabel.text = "Created: From the beginning of time"
+        }
         
         if emoji == "🏖" {
-            definitionLabel.text = "We have beautiful beaches"}
+            definitionLabel.text = "We have beautiful beaches"
+            categoryLabel.text = "Emoji Category: Nature"
+            createdLabel.text = "Created: From the beginning of time"
+        }
         
         if emoji == "🤝" {
-            definitionLabel.text = "We can get better"}
+            definitionLabel.text = "We can get better"
+            categoryLabel.text = "Emoji Category: Hands"
+            createdLabel.text = "Created: From the beginning of time"
+        }
         
         if emoji == "☝️" {
-                definitionLabel.text = "Back to back world war champs"}
+            definitionLabel.text = "Back to back world war champs"
+            categoryLabel.text = "Emoji Category: Hands"
+            createdLabel.text = "Created: From the beginning of time"
+        }
         
             }
     

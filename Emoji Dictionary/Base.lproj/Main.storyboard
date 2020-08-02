@@ -60,18 +60,37 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category: Flag" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="akA-r2-a9R">
+                                <rect key="frame" x="151.5" y="428" width="111" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Created:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="99O-Bb-Q33">
+                                <rect key="frame" x="174" y="469" width="66" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="XFM-S6-s9D"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="xA6-do-hDX" firstAttribute="top" secondItem="XFM-S6-s9D" secondAttribute="top" constant="40" id="0e1-vQ-6eH"/>
+                            <constraint firstItem="akA-r2-a9R" firstAttribute="top" secondItem="Ysl-ib-pih" secondAttribute="bottom" constant="20" id="K6G-Z5-e3u"/>
+                            <constraint firstItem="akA-r2-a9R" firstAttribute="centerX" secondItem="iEs-Oj-TIy" secondAttribute="centerX" id="Xbf-Aq-stl"/>
                             <constraint firstItem="Ysl-ib-pih" firstAttribute="centerX" secondItem="iEs-Oj-TIy" secondAttribute="centerX" id="YoK-Mc-Mab"/>
+                            <constraint firstItem="akA-r2-a9R" firstAttribute="centerX" secondItem="iEs-Oj-TIy" secondAttribute="centerX" id="ZqU-Nc-6KX"/>
+                            <constraint firstItem="99O-Bb-Q33" firstAttribute="top" secondItem="akA-r2-a9R" secondAttribute="bottom" constant="20" id="aOt-Zd-BnO"/>
+                            <constraint firstItem="99O-Bb-Q33" firstAttribute="centerX" secondItem="iEs-Oj-TIy" secondAttribute="centerX" id="jp7-eJ-sjg"/>
                             <constraint firstItem="xA6-do-hDX" firstAttribute="centerX" secondItem="iEs-Oj-TIy" secondAttribute="centerX" id="lz9-If-9iI"/>
                             <constraint firstItem="Ysl-ib-pih" firstAttribute="top" secondItem="xA6-do-hDX" secondAttribute="bottom" constant="20" id="mee-BM-gQr"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Uaa-zf-fr0"/>
                     <connections>
+                        <outlet property="categoryLabel" destination="akA-r2-a9R" id="3R4-FX-2uT"/>
+                        <outlet property="createdLabel" destination="99O-Bb-Q33" id="eff-hX-YfG"/>
                         <outlet property="definitionLabel" destination="Ysl-ib-pih" id="2Tc-aq-601"/>
                         <outlet property="emojiLabel" destination="xA6-do-hDX" id="LGj-7x-7CP"/>
                     </connections>
